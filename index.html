@@ -1,0 +1,52 @@
+<script type="module" src="https://unpkg.com/@google/model-viewer/dist/model-viewer.min.js"></script>
+
+<style>
+  @charset "utf-8";
+
+
+  #card {
+    margin: 3em auto;
+    display: flex;
+    flex-direction: column;
+    max-width: 600px;
+    border-radius: 6px;
+    box-shadow: 0 3px 10px rgba(0, 0, 0, 0.25);
+    overflow: hidden;
+  }
+
+  model-viewer {
+    width: 50%;
+    height: 400px;
+    background-color: #ffffff;
+    --poster-color: #ffffff00;
+  }
+
+  .attribution {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin: 1em;
+  }
+
+  .attribution h1 {
+    margin: 0 0 0.25em;
+  }
+
+  .attribution img {
+    opacity: 0.5;
+    height: 2em;
+  }
+
+  .attribution .cc {
+    flex-shrink: 0;
+    text-decoration: none;
+  }
+</style>
+
+<script src="https://unpkg.com/focus-visible@5.0.2/dist/focus-visible.js" defer></script>
+
+// 자료 수정
+<model-viewer src="http://3.34.42.63/3d.glb"
+  ios-src="https://cdn.glitch.com/36cb8393-65c6-408d-a538-055ada20431b/Astronaut.usdz?v=1569545377878" poster=""
+  alt="A 3D model of an astronaut" shadow-intensity="1" camera-controls auto-rotate ar>
+</model-viewer>
